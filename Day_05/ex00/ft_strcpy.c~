@@ -1,0 +1,17 @@
+#include<unistd.h>
+#include<stdio.h>
+
+char *ft_stcpy(char *dest, char *src) // la fonction strcpy copy la chaîne pointée par src dans la pointée dest. elle retourne une chaîne de caractère
+{
+  int i; // initialisation de la variable i;
+  
+  i = 0;
+  while(src[i] != "/0")
+    {
+      dest[i] = src[i];   // la boucle déroule la chaîne de char jusqu' au "/0" ; 
+      i++;
+    }
+  dest[i] = src[i];
+  return (dest);  // le résultat et la copy de src dans des on renvoie la chaine destiner modifier
+
+}
